@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-background-color: whitesmoke;
+}
+
+body {
+  color: black;
+  background-color: var(--main-background-color);
+}
+
+.side {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+.left {
+  left: 0;
+  background-color: whitesmoke;
+}
+.right {
+  right: 0;
+}
+.photo {
+  position: relative;
+}
+#image2 {
+  position: absolute;
+  left: 0;
+  height: 40%;
+  width: 40%;
+  opacity: 50%;
+  padding: 10%;
+}
+#title {
+  position: fixed;
+  left: 20rem;
+  top: 10rem;
+  font-size: 72px;
+  color: white;
+}
+
+.photo > img {
+  height: 100%;
+  width: 100%;
+}
+
+.top,
+.middle,
+.bottom {
+  padding: 60px;
+}
+.top {
+  padding-top: 200px;
+}
+.top h2 {
+  padding-top: 20px;
+}
+.middle {
+  background-color: white;
+  /* border: 1px solid; */
+  padding: 10px;
+  box-shadow: -1em 0 0.4em lightgray;
+}
+.form-wrapper {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+.form-row input {
+  border-radius: 2px;
+}
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #596d48;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+  border-radius: 10px;
+}
